@@ -19,38 +19,6 @@
  *				 !SMB_DESC_PORT_FLAG_POLARITY_HIGH
  *				 and !SMB_DESC_PORT_FLAG_READABLE_REG   not tested
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: sysmanagbus_port.c,v $
- * Revision 1.9  2004/10/14 16:09:12  dpfeuffer
- * casts added
- *
- * Revision 1.8  2003/06/06 09:40:20  kp
- * fixed compiler warnings
- *
- * Revision 1.7  2001/09/18 15:22:50  kp
- * use different names for SMB_PORT_Init depending in access mode IO/MEM
- *
- * Revision 1.6  2000/09/08 10:26:35  Schmidt
- * 1) SMB_PORT_Init : cast for WriteReadTwoByte was wrong
- * 2) nodoc to non-public functions added
- *
- * Revision 1.5  2000/08/03 19:28:44  Franke
- * added WriteReadTwoByte as NULL pointer
- *
- * Revision 1.3  2000/06/09 09:48:59  Schmidt
- * 1) include <MEN/dbg.h> added
- * 2) __inline__ define for VC added
- * 3) smbIdent function added / SMB_PORT_Init sets entry for Ident function
- *
- * Revision 1.2  1999/03/04 08:35:53  kp
- * 1) dummy define for __inline__ in case of Ultra-C
- * 2) replaced all NULL args to MREAD/MWRITE macros with 0
- * 3) fixed bad casts for entries
- *
- * Revision 1.1  1999/03/03 13:38:21  Franke
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuremberg, Germany
  ******************************************************************************/
