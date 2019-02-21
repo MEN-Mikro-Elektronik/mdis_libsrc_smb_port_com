@@ -8,14 +8,8 @@
 #
 #                 variant smb_port_io for i/o access
 #                      
-#---------------------------------[ History ]---------------------------------
-#
-#   $Log: library_io.mak,v $
-#   Revision 1.1  2000/09/08 10:26:42  Schmidt
-#   Initial Revision
-#
 #-----------------------------------------------------------------------------
-#   (c) Copyright 2000 by MEN mikro elektronik GmbH, Nuernberg, Germany 
+#   Copyright (c) 2000-2019, MEN Mikro Elektronik GmbH
 #*****************************************************************************
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
