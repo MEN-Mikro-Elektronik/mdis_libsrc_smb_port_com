@@ -1,8 +1,6 @@
 #**************************  M a k e f i l e ********************************
 #  
 #         Author: ds
-#          $Date: 2000/09/08 10:26:40 $
-#      $Revision: 1.2 $
 #  
 #    Description: makefile descriptor for SMB_PORT library (all sources)
 #                      
@@ -24,10 +22,15 @@
 
 
 MAK_NAME=smb_port
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="mdis_libsrc_smb_port_com_01_20-0-g1513839-dirty_2019-02-21"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_LIBS=
 
-MAK_SWITCH=$(SW_PREFIX)MAC_MEM_MAPPED
+MAK_SWITCH=$(SW_PREFIX)MAC_MEM_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION)
 
 MAK_INCL=$(MEN_INC_DIR)/dbg.h \
          $(MEN_INC_DIR)/maccess.h \

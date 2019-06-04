@@ -4,8 +4,6 @@
  *      Project: SMB_PORT library
  *
  *       Author: uf
- *        $Date: 2004/10/14 16:09:12 $
- *    $Revision: 1.9 $
  *
  *  Description: system managment bus driver for a port
  *				 SMB/IIC protocol emulation.
@@ -44,6 +42,8 @@
 
 #define SMB_COMPILE
 #include <MEN/sysmanagbus.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  TYPEDEFS                                |
@@ -942,7 +942,7 @@ CLEANUP:
  ****************************************************************************/
 static char *smbIdent( void )
 {
-    return( "SMB - SMB library: $Id: sysmanagbus_port.c,v 1.9 2004/10/14 16:09:12 dpfeuffer Exp $" );
+    return( (char*) IdentString );
 }/*smbIdent*/
 
 #if 0 /* BLK functions not implemented */
